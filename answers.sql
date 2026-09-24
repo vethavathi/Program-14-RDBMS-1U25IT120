@@ -1,13 +1,12 @@
 -- Program 14: Write a PL/SQL block to declare two variables and display the sum of two numbers.
-
 SET SERVEROUTPUT ON;
 
 DECLARE
-   -- Declare your variables here
-
+    num1 NUMBER := 10;
+    num2 NUMBER := 20;
+    total NUMBER;
 BEGIN
-   -- Write your PL/SQL code here to calculate and display the sum
-   
-   DBMS_OUTPUT.PUT_LINE('Sum: ');
+    total := num1 + num2;
+    DBMS_OUTPUT.PUT_LINE('Sum: ' || total);
 END;
 /
